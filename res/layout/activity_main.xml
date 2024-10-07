@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:backgroundTint="@color/dark_gray"
+    tools:context=".USBHIDTerminal">
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <SeekBar
+        android:id="@+id/sbCH1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="254"
+        android:progressTint="@color/dark_gray"
+        android:thumbTint="@color/dark_gray"
+        android:backgroundTint="@color/dark_gray"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <SeekBar
+        android:id="@+id/sbCH2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/dark_gray"
+        android:thumbTint="@color/dark_gray"
+        android:backgroundTint="@color/dark_gray"
+        android:max="254"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <SeekBar
+        android:id="@+id/sbCH3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/dark_gray"
+        android:thumbTint="@color/dark_gray"
+        android:backgroundTint="@color/dark_gray"
+        android:max="254"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <SeekBar
+        android:id="@+id/sbCH4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/dark_gray"
+        android:thumbTint="@color/dark_gray"
+        android:backgroundTint="@color/dark_gray"
+        android:max="254"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <SeekBar
+        android:id="@+id/sbCH5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/dark_gray"
+        android:thumbTint="@color/dark_gray"
+        android:backgroundTint="@color/dark_gray"
+        android:max="254"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <SeekBar
+        android:id="@+id/sbCH6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/dark_gray"
+        android:thumbTint="@color/dark_gray"
+        android:backgroundTint="@color/dark_gray"
+        android:max="254"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <SeekBar
+        android:id="@+id/sbCH7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/dark_gray"
+        android:thumbTint="@color/dark_gray"
+        android:backgroundTint="@color/dark_gray"
+        android:max="254"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <SeekBar
+        android:id="@+id/sbCH8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_gray"
+        android:max="254"
+        android:progress="0"
+        android:progressTint="@color/dark_gray"
+        android:thumbTint="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servo Controller Not Connected" />
+
+    <ImageView
+        android:id="@+id/btnSelectHIDDevice"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/circle_background"
+        android:backgroundTint="@color/dark_gray"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:src="@drawable/ic_usb_24" />
+
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+ext {
+    versionMajor = 1
+    versionMinor = 1
+}
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.6.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    //implementation 'androidx.appcompat:appcompat:1.6.1'
+    //implementation 'com.google.android.material:material:1.9.0'
+
+    implementation 'androidx.core:core:1.13.1'
+    implementation 'com.nanohttpd:nanohttpd:2.1.1'
+    implementation 'com.nanohttpd:nanohttpd-websocket:2.1.1'
+    implementation 'org.greenrobot:eventbus:3.3.1'
+
+    //implementation 'org.webrtc:google-webrtc:1.0.+'
+    // Testing-only dependencies
+    androidTestImplementation "androidx.test:core:1.6.1";
+    androidTestImplementation "androidx.test.ext:junit:1.2.1";
+    androidTestImplementation "androidx.test:runner:1.6.1";
+    androidTestImplementation "androidx.test:rules:1.6.1";
+}
+
+android {
+
+    namespace 'com.appspot.usbhidterminal'
+
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.appspot.usbhidterminal"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode computeVersionCode()
+        versionName computeVersionName()
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+        androidTest.setRoot('tests')
+        androidTest.java.srcDirs = ['tests/src']
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES.txt', 'META-INF/DEPENDENCIES', 'META-INF/dependencies.txt', 'META-INF/LICENSE.txt', 'META-INF/LICENSE', 'META-INF/license.txt', 'META-INF/LGPL2.1', 'META-INF/NOTICE.txt', 'META-INF/NOTICE', 'META-INF/notice.txt', 'LICENSE.txt']
+        }
+    }
+    lint {
+        abortOnError false
+    }
+
+}
+
+
+
+
+
+def computeVersionName() {
+    // Basic <major>.<minor> version name
+    return String.format('%d.%d', versionMajor, versionMinor)
+}
+
+// Will return 120042 for Jenkins build #42
+def computeVersionCode() {
+    // Major + minor + Jenkins build number (where available)
+    return (versionMajor * 10) + (versionMinor * 10) + Integer.valueOf(System.env.BUILD_NUMBER ?: 0)
+}
