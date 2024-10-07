@@ -1,44 +1,19 @@
-USBHIDTerminal for Android
-==============
-[![Build Status](https://travis-ci.org/452/USBHIDTerminal.svg?branch=develop)](https://travis-ci.org/452/USBHIDTerminal)
+# Endurance R/C LLC - RealDriver
+-----------------------------------------------------------------------------------------
+        ______          __                                    ____     ________
+       / ____/___  ____/ /_  ___________ _____  ________     / __ \  _/_/ ____/
+      / __/ / __ \/ __  / / / / ___/ __ `/ __ \/ ___/ _ \   / /_/ /_/_// /     
+     / /___/ / / / /_/ / /_/ / /  / /_/ / / / / /__/  __/  / _, _//_/ / /___   
+    /_____/_/ /_/\__,_/\__,_/_/   \__,_/_/ /_/\___/\___/  /_/ /_/_/   \____/   
 
-This application was created in my hobby time.
+-----------------------------------------------------------------------------------------
 
-USB HID Terminal provide access to HID USB devices.
-HID Terminal can be used for transfer any commands or any data to your USB HID devices.
-USB HID Terminal - can receive and send bytes, hex, binary, text.
+Control 8 channels on Endurance R/C Devices.
 
-https://play.google.com/store/apps/details?id=com.appspot.usbhidterminal
+Requires an Endurance R/C 25 Servo Controller and USB OTG cable.
 
-binary APK:
-https://github.com/452/USBHIDTerminalAPKRepo
+-----------------------------------------------------------------------------------------
 
-for Gradle: [https://docs.gradle.org/current/userguide/installation.html]
+This app utilizes code from the following GitHub projects: 
 
-    $ git clone https://github.com/452/USBHIDTerminal.git
-    $ cd USBHIDTerminal
-    $ ./gradlew build
-
-result you can find:
-> USBHIDTerminal/build/outputs/apk/USBHIDTerminal-release-unsigned.apk
-
-If you have some problem or want to improve this application you can help me, or just say me about this.
-We can make this world better.
-
-;) Ukraine
-
-## LICENSE
-
-Copyright 2024 452 emetemunoy.
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-<http://www.apache.org/licenses/LICENSE-2.0>
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+USBHIDTerminal by 452(emetemunoy) - https://github.com/452/USBHIDTerminal
