@@ -14,7 +14,9 @@ Requires an Endurance R/C 25 Servo Controller and USB OTG cable.
 
 -----------------------------------------------------------------------------------------
 
-![alt text](https://github.com/endurancerc/USBServoControllerAndroid/blob/master/USBServoControllerAndroid_screencap.jpg)?raw=true)
+![alt text](https://github.com/endurancerc/USBServoControllerAndroid/blob/master/USBServoControllerAndroid_screencap.jpg?raw=true)
+
+-----------------------------------------------------------------------------------------
 
 This app utilizes code from the following GitHub projects: 
 
